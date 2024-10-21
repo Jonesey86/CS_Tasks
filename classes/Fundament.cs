@@ -1,8 +1,18 @@
+using System.Globalization;
+
 public class Fundament : IFundament
 {
     public void CheckOddOrEven(double a)
     {
-        throw new NotImplementedException();
+        if (a % 2 == 0)
+        {
+            Console.WriteLine($"{a} is even.");
+        }
+        else
+        {
+            Console.WriteLine($"{a} is odd.");
+        }
+            throw new NotImplementedException();
     }
 
     public string GetAInterestingFact(string fact)
@@ -26,9 +36,9 @@ public class Fundament : IFundament
     public void PrintFibonnaciSeries()
     {
         // TODO: Implement the Fibonacci sequence
-        int a = 0;
-        int b = 1;
-        int c;
+        // int a = 0;
+        // int b = 1;
+        // int c;
 
         /* 
         c = a + b
